@@ -58,16 +58,19 @@ npm start
 
 #### Public Routes
 
-*Method*	*Endpoint*	        *Description*
-POST	/api/auth/signup	Register a new user
-POST	/api/auth/login	    Login existing user
+| Method | Endpoint         | Description         |
+| ------ | ---------------- | ------------------- |
+| POST   | /api/auth/signup | Register a new user |
+| POST   | /api/auth/login  | Login existing user |
+
 
 #### Protected Routes (require JWT)
 
-*Method*	*Endpoint*	                *Description*
-GET	    /api/auth/check	            Verify user authentication
-PUT	    /api/auth/update-profile	Update logged-in user's profile
-GET	    /api/messages/users	        Get all users for sidebar
-GET	    /api/messages/:id	        Get all messages with selected user
-PATCH	/api/messages/mark/:id	    Mark a single message as seen
-POST	/api/messages/send/:id	    Send message to a specific user
+| Method | Endpoint                 | Description                         |
+| ------ | ------------------------ | ----------------------------------- |
+| GET    | /api/auth/check          | Verify user authentication          |
+| PUT    | /api/auth/update-profile | Update logged-in user's profile     |
+| GET    | /api/messages/users      | Get all users for sidebar           |
+| GET    | /api/messages/\:id       | Get all messages with selected user |
+| PATCH  | /api/messages/mark/\:id  | Mark a single message as seen       |
+| POST   | /api/messages/send/\:id  | Send message to a specific user     |
